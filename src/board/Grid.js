@@ -19,7 +19,7 @@ const gridCols = 50;
 const linePreset = () => {
   const rows = [];
   for (let i = 0; i < gridRows; i++) {
-    rows.push(Array.from(Array(gridCols), () => (i == 25 ? 1 : 0)));
+    rows.push(Array.from(Array(gridCols), () => (i === 25 ? 1 : 0)));
   }
   return rows;
 };
